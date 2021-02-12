@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Debug */
+
+/* Fine Debug */
+body {
+    background-color: #141922;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
