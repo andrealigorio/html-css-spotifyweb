@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Spotify</title>
 </head>
 <body>
     <div class="wrapper">
@@ -13,35 +16,39 @@
             <div class="nav_main">
                 <div class="nav_top">
                     <div id="logo">
-                        LOGO
-                        <img src="" alt="">
+                        <a href=""><img src="img/logo.svg" alt="Logo Spotify"></a>
                     </div>
                     <div class="nav_menu">
                         <ul>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
+                            <li class="active"><a href=""><img src="img/home.svg" alt="Home">Home</a></li>
+                            <li><a href=""><img src="img/search.svg" alt="Search">Cerca</a></li>
+                            <li><a href=""><img src="img/libreria.svg" alt="Libreria">La tua libreria</a></li>
                         </ul>
                     </div>
                     <div class="nav_playlist">
-                        <h3>title</h3>
-                        <a class="playlist_plus" href="">link</a>
+                        <h3>playlist</h3>
+                        <a class="playlist_plus" href=""><i class="fas fa-plus"></i>&ensp;Crea Playlist</a>
                         <ul>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
+                            <li><a href="">Nome playlist</a></li>
+                            <li><a href="">Nome playlist</a></li>
+                            <li><a href="">Nome playlist</a></li>
+                            <li><a href="">Nome playlist</a></li>
+                            <li><a href="">Nome playlist</a></li>
+                            <li><a href="">Nome playlist</a></li>
+                            <li><a href="">Nome playlist</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="nav_user">
-                    <a href="">link</a>
-                    <img src="" alt="">
-                    <h1>User</h1>
+                    <div class="install_app">
+                        <a href=""><img src="img/download.svg" alt="Download">Installa app</a>
+                    </div>
+                    <div id="profile">
+                        <div class="profile_img">
+                            <img src="img/profile.svg" alt="Profile">
+                        </div>
+                        <h3>John Doe</h3>
+                    </div>
                 </div>
             </div>
             <div class="content_main">
@@ -83,7 +90,7 @@
                         </div>
                     </div>
 
-                </div>s
+                </div>
                 <div class="overlay">
 
                 </div>

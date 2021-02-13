@@ -3,6 +3,66 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Fonts */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light.woff2') format('woff2'),
+        url('../fonts/Gotham-Light.woff') format('woff'),
+        url('../fonts/Gotham-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/Gotham-Bold.woff') format('woff'),
+        url('../fonts/Gotham-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Book.woff2') format('woff2'),
+        url('../fonts/Gotham-Book.woff') format('woff'),
+        url('../fonts/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Medium.woff2') format('woff2'),
+        url('../fonts/Gotham-Medium.woff') format('woff'),
+        url('../fonts/Gotham-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Thin.woff2') format('woff2'),
+        url('../fonts/Gotham-Thin.woff') format('woff'),
+        url('../fonts/Gotham-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Black.woff2') format('woff2'),
+        url('../fonts/Gotham-Black.woff') format('woff'),
+        url('../fonts/Gotham-Black.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 /* Debug */
 body, a {
     color: white;
@@ -12,7 +72,8 @@ body, a {
 }
 /* Fine Debug */
 body {
-    font-size: 16px;
+    font-family: 'Gotham';
+    font-size: 14px;
 }
 /* general */
 ul {
@@ -35,25 +96,120 @@ main {
     height: 100vh;
     background-color: #141922;
 }
-
+.nav_main a {
+    color: #717171;
+    font-weight: bold;
+}
+.nav_main a:hover {
+    color: #ffffff;
+}
 .nav_main {
     float: left;
     background-color: black;
-    width: 200px;
+    width: 250px;
     height: 100%;
-    padding: 10px;
     overflow: hidden;
 }
 .nav_top {
-    height: calc(100% - 50px);
-    min-height: 300px;
+    height: calc(100% - 70px);
+    min-height: 380px;
+}
+#logo {
+    width: 160px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+#logo img {
+    width: 100%;
+}
+.nav_menu img {
+    height: 25px;
+    filter: opacity(.5);
+    margin-right: 10px;
+}
+.nav_menu .active img {
+    filter: opacity(1);
+}
+.nav_menu ul li {
+    padding: 5px 12px;
+    border-left: 3px solid transparent;
+}
+.nav_menu ul .active {
+    border-left: 3px solid #adff2f;
+}
+.nav_menu .active a {
+    color: #ffffff;
+}
+.nav_menu a {
+    display: flex;
+    align-items: center;
+}
+.nav_playlist a:hover i {
+    background-color: #ffffff;
+}
+.nav_menu a:hover img {
+    filter: opacity(1);
+}
+.nav_playlist {
+    padding: 20px 0 20px 15px;
+}
+.nav_playlist h3 {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.nav_playlist i {
+    font-size: 20px;
+    padding: 7px;
+    color: black;
+    background-color:  #a3a3a3;
+}
+.nav_playlist ul {
+    overflow-y: scroll;
+}
+.nav_playlist ul li {
+    padding: 10px 0;
 }
 .nav_user {
-    height: 50px;
+    height: 70px;
+    padding-left: 15px;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+.nav_user img {
+    width: 20px;
+    margin-right: 10px;
+    filter: opacity(.5);
+    vertical-align: middle;
+}
+.nav_user a:hover img {
+    filter: opacity(1);
+}
+.install_app {
+    border-bottom: 1px solid #717171;
+    padding-bottom: 10px;
+}
+#profile {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.profile_img {
+    width: 24px;
+    margin-right: 10px;
+    border-radius: 100%;
+    padding: 0 2px;
+    background-color: #808080;
+    overflow: hidden;
+}
+.profile_img img {
+    width: 100%;
 }
 .content_main {
     float: left;
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     height: 100%;
     overflow-y: auto;
 }
@@ -77,3 +233,4 @@ footer {
 .player {
     /* flex-grow: 2; */
 }
+
