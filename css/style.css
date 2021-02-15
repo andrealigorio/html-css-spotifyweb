@@ -8,7 +8,8 @@ body {
     font-size: 14px;
     color: white;
 }
-/* general */
+
+/* GENERAL */
 ul {
     list-style: none;
 }
@@ -24,7 +25,8 @@ a {
     border-radius: 50%;
     overflow: hidden;
 }
-/* fine general */
+/* FINE GENERAL */
+
 main {
     height: calc(100% - 80px);
 }
@@ -53,12 +55,16 @@ main {
     height: calc(100% - 80px);
     min-height: 390px;
 }
+
+/* LOGO SMART PER RESPONSIVE */
 #logo_smart {
     display: none;
     width: 40px;
     margin: 0 auto;
     padding-top: 10px;
 }
+
+/* PARTE LOGO E MENU SUPERIORE */
 #logo {
     width: 160px;
     height: 80px;
@@ -93,6 +99,8 @@ main {
     display: flex;
     align-items: center;
 }
+
+/* PARTE MENU PLAYLIST */
 .nav_playlist a:hover i {
     background-color: #ffffff;
 }
@@ -118,6 +126,8 @@ main {
 .nav_playlist ul li {
     padding: 10px 0;
 }
+
+/* MENU USER INFERIORE */
 .nav_user {
     height: 80px;
     padding: 10px 15px;
@@ -260,6 +270,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+/* PARTE SONG NAME DI SINISTRA*/
 .song_name {
     display: flex;
     align-items: center;
@@ -292,11 +303,11 @@ footer {
     font-size: 15px;
     padding: 5px;
 }
+/* PARTE PLAYER CENTRALE */
 .player {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 .player_top {
     width: 200px;
@@ -327,6 +338,8 @@ footer {
 .player_bottom .start_time::before {
     content: '0:25';
 }
+
+/* BARRA DI SCORRIMENTO */
 .bar_total {
     content: '';
     width: 90%;
@@ -364,10 +377,11 @@ footer {
 .player_bottom .end_time::before {
     content: '4:35';
 }
+
+/* PARTE AUDIO */
 .audio {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .audio .audio_icon {
     display: flex;
