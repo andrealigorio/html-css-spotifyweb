@@ -171,14 +171,13 @@ main {
     width: calc(100% - 220px);
     height: 100%;
     overflow-y: auto;
-    padding: 20px;
-    padding-top: 80px;
 }
 .content_menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     line-height: 25px;
+    padding-top: 80px; /* PER DARE SPAZIO ALLA BARRA SUPERIORE */
 }
 .menu_item {
     position: relative;
@@ -202,6 +201,9 @@ main {
     height: 2px;
     width: 35px;
     background-color: #adff2f;
+}
+#recently, #created_for, #popular_artist {
+    padding: 0 0 20px 20px;
 }
 #recently h1 {
     padding-top: 20px;
