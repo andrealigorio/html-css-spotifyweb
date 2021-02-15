@@ -227,7 +227,7 @@ main {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 4px;
+    bottom: 0;
 }
 .item:hover .item_overlay {
     opacity: 0.4;
@@ -250,6 +250,7 @@ main {
     padding: 10px 0;
 }
 .album_img img {
+    display: block;
     width: 100%;
 }
 #created_for h1, #popular_artist h1 {
@@ -387,13 +388,14 @@ footer {
     display: flex;
 }
 .audio .audio_icon i {
+    font-size: 12px;
     color: white;
     padding: 0 10px;
     display: flex;
     cursor: pointer;
 }
 .sound_bar {
-    width: 80px;
+    width: 70px;
 }
 
 /* BARRA SUPERIORE OVERLAY */
