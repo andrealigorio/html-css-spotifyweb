@@ -51,17 +51,17 @@ main {
     height: 100%;
     overflow: hidden;
 }
-.nav_top {
-    height: calc(100% - 80px);
-    min-height: 390px;
-}
 
 /* LOGO SMART PER RESPONSIVE */
 #logo_smart {
     display: none;
     width: 40px;
+    height: 60px;
     margin: 0 auto;
     padding-top: 10px;
+}
+#logo_smart img {
+    width: 100%;
 }
 
 /* PARTE LOGO E MENU SUPERIORE */
@@ -74,6 +74,9 @@ main {
 #logo img {
     width: 100%;
     vertical-align: middle;
+}
+.nav_menu {
+    height: 110px;
 }
 .nav_menu img {
     height: 25px;
@@ -108,7 +111,10 @@ main {
     background-color: #ffffff;
 }
 .nav_playlist {
-    padding: 20px 0 20px 15px;
+    height: 70px;
+}
+.nav_playlist, .playlist {
+    padding-left: 15px;
 }
 .nav_playlist h3 {
     text-transform: uppercase;
@@ -120,10 +126,12 @@ main {
     color: black;
     background-color:  #a3a3a3;
 }
-.nav_playlist ul {
+.playlist {
+    height: calc(100vh - 260px - 160px); /* SOTTRAGGO ALL'ALTEZZA TOTALE LE HEIGHT DI LOGO NAV MENU, NAV PLAYLIST E NAV USER */
+    min-height: 110px;
     overflow-y: auto;
 }
-.nav_playlist ul li {
+.playlist li {
     padding: 10px 0;
 }
 
@@ -433,7 +441,7 @@ footer {
 ::-webkit-scrollbar-track {
     background-color: #141922;
 }
-.nav_playlist ::-webkit-scrollbar-track {
+.playlist::-webkit-scrollbar-track {
     background-color: black;
 }
 ::-webkit-scrollbar-thumb {
@@ -474,7 +482,7 @@ footer {
     .nav_main {
         width: 50px;
     }
-    .nav_top #logo, .nav_playlist, .nav_menu span, .nav_user .install_app span, .nav_user h3 {
+    #logo, .nav_playlist, .nav_menu span, .playlist, .nav_user .install_app span, .nav_user h3 {
         display: none;
     }
     .nav_menu ul li:not(.vert_selected), .nav_menu ul li {
@@ -485,6 +493,10 @@ footer {
     }
     .nav_user .profile_img, .nav_user .install_app img{
         margin: 0;
+    }
+    .nav_menu {
+        height: calc(100vh - 220px); /* SOTTRAGGO ALTEZZA LOGO SMART E NAV USER */
+        min-height: 110px;
     }
     .content_main {
         width: calc(100% - 50px);    
@@ -500,6 +512,7 @@ footer {
     width: 150px;
     }
 }
+/* MEDIA QUERY PER FAR SPARIRE IL BOTTONE DI UPGRADE */
 @media screen and (max-width: 600px) and (max-height: 400px) {
     .upgrade {
         display: none;
