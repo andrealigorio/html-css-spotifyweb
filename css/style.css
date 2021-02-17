@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    min-width: 500px;
+    min-width: 320px;
     font-family: 'Circular Std', sans-serif;
     font-size: 14px;
     color: white;
@@ -323,7 +323,7 @@ footer {
     align-items: center;
 }
 .player_top {
-    width: 40%;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -395,6 +395,7 @@ footer {
 .audio {
     width: 220px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .audio .audio_icon {
@@ -413,7 +414,6 @@ footer {
 
 /* BARRA SUPERIORE OVERLAY */
 .top_overlay {
-    width: 100%;
     height: 80px;
     background-color: black;
     position: absolute;
@@ -491,15 +491,18 @@ footer {
     .content_main {
         width: calc(100% - 50px);    
     }
-    .top_overlay {
-        left: 50px;
-        width: calc(100% - 50px);
-    }
     .song_name .font_icon {
         flex-direction: column;
     }
     .player_top {
-    width: 150px;
+        width: 120px;
+    }
+    .audio .audio_icon i {
+        padding: 2px;
+    }
+    .top_overlay {
+        left: 50px;
+        width: calc(100% - 50px);
     }
 }
 /* MEDIA QUERY PER FAR SPARIRE IL BOTTONE DI UPGRADE */
